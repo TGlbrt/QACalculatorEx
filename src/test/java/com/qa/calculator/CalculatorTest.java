@@ -11,6 +11,12 @@ Calculator calc;
 		int actualValue = calc.add(2, 2);
 		Assert.assertEquals(4, actualValue);
 	}
+	@Test
+	public void multiplication() {
+		calc = new Calculator();
+		int actualValue = calc.multiply(4, 5);
+		Assert.assertEquals(20, actualValue);
+	}
 	
 	@Test
 	public void testSubtraction() {
