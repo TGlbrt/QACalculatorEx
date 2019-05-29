@@ -2,8 +2,11 @@ package com.qa.calculator;
 
 public class Calculator {
 
-	public int add(int num1, int num2) {
-		return num1 + num2;
+	public int add(int numOne, int numTwo) {
+		Addition add = new Addition();
+		add.setValue(numOne, numTwo);
+		int answer = add.getValue();
+		return answer;
 	}
 	
 	public int sub(int numberOne, int numberTwo) {
@@ -14,6 +17,6 @@ public class Calculator {
 		return numberOne - numberTwo;
 	}
 	
-	
+
 
 }
