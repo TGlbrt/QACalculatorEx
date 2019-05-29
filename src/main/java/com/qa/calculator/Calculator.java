@@ -19,6 +19,12 @@ public class Calculator implements Functions{
 		return answer;
 
 	}
+	public int multiply(int numOne, int numTwo) {
+		Multiply multi = new Multiply();
+		multi.setValue(numOne, numTwo);
+		int answer = multi.getValue();
+		return answer;
+	}
 	
 	public int sub(int numberOne, int numberTwo) {
 		return numberOne - numberTwo;
