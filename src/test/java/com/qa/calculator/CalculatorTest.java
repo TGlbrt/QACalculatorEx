@@ -29,6 +29,12 @@ public class CalculatorTest {
 		double actualValue = calc.multiply(4.0, 5.0);
 		Assert.assertEquals(20, actualValue,0.1);
 	}
+	@Test
+	public void division() {
+		calc = new Calculator();
+		double actualValue = calc.division(20.0, 5.0);
+		Assert.assertEquals(4, actualValue,0.1);
+	}
 	
 	@Test
 	public void testSubtraction() {

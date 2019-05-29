@@ -25,6 +25,12 @@ public class Calculator implements Functions{
 		double answer = multi.getValue();
 		return answer;
 	}
+	public double division(double numOne, double numTwo) {
+		Division div = new Division();
+		div.setValue(numOne, numTwo);
+		double answer = div.getValue();
+		return answer;
+	}
 	
 	public int sub(int numberOne, int numberTwo) {
 		return numberOne - numberTwo;
