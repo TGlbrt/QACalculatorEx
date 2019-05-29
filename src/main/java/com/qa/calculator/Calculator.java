@@ -12,17 +12,17 @@ public class Calculator implements Functions{
 	}
 	
 
-	public int add(int numOne, int numTwo) {
+	public double add(double numOne, double numTwo) {
 		Addition add = new Addition();
 		add.setValue(numOne, numTwo);
-		int answer = add.getValue();
+		double answer = add.getValue();
 		return answer;
 
 	}
-	public int multiply(int numOne, int numTwo) {
+	public double multiply(double numOne, double numTwo) {
 		Multiply multi = new Multiply();
 		multi.setValue(numOne, numTwo);
-		int answer = multi.getValue();
+		double answer = multi.getValue();
 		return answer;
 	}
 	

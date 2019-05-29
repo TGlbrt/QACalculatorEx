@@ -20,15 +20,14 @@ public class CalculatorTest {
 	
 	@Test
 	public void addition() {
-		
-		int actualValue = calc.add(2, 2);
-		Assert.assertEquals(4, actualValue);
+		double actualValue = calc.add(2.0, 2.0);
+		Assert.assertEquals(4, actualValue,0.1);
 	}
 	@Test
 	public void multiplication() {
 		calc = new Calculator();
-		int actualValue = calc.multiply(4, 5);
-		Assert.assertEquals(20, actualValue);
+		double actualValue = calc.multiply(4.0, 5.0);
+		Assert.assertEquals(20, actualValue,0.1);
 	}
 	
 	@Test
