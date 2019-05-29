@@ -15,6 +15,10 @@ public class CalculatorTest {
 	@Test
 	public void testSubtraction() {
 		Calculator aCalc = new Calculator();
+		int storedValue = aCalc.sub(4,2);
+		double anotherValue = aCalc.sub(4.5,2.4);
+		Assert.assertEquals(2, storedValue);
+		Assert.assertEquals(2.1, anotherValue,0.1);
 	}
 
 }
